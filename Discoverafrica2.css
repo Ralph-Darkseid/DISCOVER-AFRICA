@@ -1,0 +1,172 @@
+/* ABOUT ME SECTION */
+
+.about {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 8%;
+}
+
+.about-text h2,
+.skills h2,
+.selected-work h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-text h3 {
+    margin-bottom: 15px;
+    color: darkslategray;
+}
+
+.about-text p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/* EDUCATION SECTION */
+
+.education {
+    padding: 60px 8%;
+}
+
+.education h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.education-card {
+    padding: 25px;
+    background-color: #f1f5f2;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.education-card h3 {
+    margin-bottom: 12px;
+    color: darkslategray;
+}
+
+
+/* SKILLS SECTION */
+
+.skills {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    padding: 25px;
+    background-color: #f1f5f2;
+    border-radius: 10px;
+}
+
+.skill-card h3 {
+    margin-bottom: 12px;
+    color: darkslategray;
+}
+
+
+/* SELECTED WORK SECTION */
+
+.selected-work {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-description {
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.technology-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.technology-tags span {
+    font-size: 0.85rem;
+    color: darkslategray;
+    background-color: #f1f5f2;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 900px) {
+
+    .skills-container,
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
